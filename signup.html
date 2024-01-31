@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign-up</title>
+		<!--css-->
+		<link rel="stylesheet" href="signup.css" />
+		<!--Boxicons css-->
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Container for video and form -->
+		<div class="center-container"></div>
+
+		<!-- Video -->
+		<div class="video-container">
+			<video controls>
+				<source src="desktop/signup.mp4" type="video/mp4" />
+			</video>
+		</div>
+
+		<!-- User and Admin buttons -->
+		<div class="button-container">
+			<button id="btn_user" class="uabutton active">USER</button>
+			<button id="btn_admin" class="uabutton">ADMIN</button>
+		</div>
+
+		<div class="form-container">
+			<form action="#">
+				<h1>User Registration</h1>
+
+				<input id="fullName" type="text" placeholder="Full Name:" />
+				<input id="email" type="email" placeholder="Email:" />
+				<input id="mobileNumber" type="text" placeholder="Mobile Number:" />
+				<input id="userName" type="text" placeholder="User Name:" />
+				<input id="password" type="password" placeholder="Password:" />
+				<input
+					id="confirmPassword"
+					type="password"
+					placeholder="ConfirmPassword:"
+				/>
+
+				<div class="button-field">
+					<button type="submit" class="signup">Sign Up</button>
+					<button type="reset" class="reset">Reset</button>
+				</div>
+				<div class="form-link">
+					<span>
+						Already Have An Account?
+						<a href="#" class="login-link">LOGIN</a>
+					</span>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
